@@ -13,11 +13,11 @@
             $password = 'password';
             
             //On établit la connexion
-            $conn = mysql_connect($servername, $username, $password);
+            $conn = mysqli_connect($servername, $username, $password);
             
             //On vérifie la connexion
             if(!$conn){
-                die('Erreur : ' .mysql_connect_error());
+                die('Erreur : ' .mysqli_connect_error());
             }
             echo 'Connexion réussie';
         ?>
