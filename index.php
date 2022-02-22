@@ -10,14 +10,14 @@
         <?php
             $servername = 'localhost';
             $username = 'root';
-            $password = 'root';
+            $password = 'password';
             
             //On établit la connexion
-            $conn = mysqli_connect($servername, $username, $password);
+            $conn = mysql_connect($servername, $username, $password);
             
             //On vérifie la connexion
             if(!$conn){
-                die('Erreur : ' .mysqli_connect_error());
+                die('Erreur : ' .mysql_connect_error());
             }
             echo 'Connexion réussie';
         ?>
